@@ -4,22 +4,22 @@ Type the following command to install Mroonga by Homebrew:
 
 With MySQL 5.7:
 
-    % brew tap mroonga/mroonga
+    % brew tap puleeno/mroonga
     % brew install mroonga --use-homebrew-mysql --no-sandbox
 
 With MySQL 5.6:
 
-    % brew tap mroonga/mroonga
+    % brew tap puleeno/mroonga
     % brew install mroonga --use-homebrew-mysql56 --no-sandbox
 
 With MySQL 5.5:
 
-    % brew tap mroonga/mroonga
+    % brew tap puleeno/mroonga
     % brew install mroonga --use-homebrew-mysql55 --no-sandbox
 
 With MariaDB:
 
-    % brew tap mroonga/mroonga
+    % brew tap puleeno/mroonga
     % brew install mroonga --use-homebrew-mariadb --no-sandbox
 
 If you have an old formulae, please unlink to the old formulae version:
@@ -41,5 +41,5 @@ If you want to use this formula with MySQL built by yourself instead of MySQL in
     % scripts/mysql_install_db
     % bin/mysqld_safe &
     % cd -
-    % brew tap mroonga/mroonga
+    % brew tap puleeno/mroonga
     % PATH="$HOME/local/mysql-5.5.24/bin:$PATH" brew install mroonga --with-mysql-source=$(pwd)
