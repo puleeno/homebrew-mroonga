@@ -26,7 +26,7 @@ class Mroonga < Formula
   if build.include?("use-homebrew-mysql")
     depends_on "cmake" => :build
     depends_on "boost" => :build
-    depends_on "mysql"
+    depends_on "mysql@5.7"
   elsif build.include?("use-homebrew-mysql56")
     depends_on "cmake" => :build
     depends_on "mysql@5.6"
@@ -45,7 +45,7 @@ class Mroonga < Formula
 
   def install
     if build.include?("use-homebrew-mysql")
-      mysql_formula_name = "mysql"
+      mysql_formula_name = "mysql@5.7"
     elsif build.include?("use-homebrew-mysql56")
       mysql_formula_name = "mysql@5.6"
     elsif build.include?("use-homebrew-mysql55")
