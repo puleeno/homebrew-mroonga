@@ -38,7 +38,7 @@ class Mroonga < Formula
     depends_on "mariadb"
   end
 
-  def patches
+  patch do
     [
     ]
   end
